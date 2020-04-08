@@ -1,0 +1,9 @@
+@import "_mixins/font-face";
+
+//@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+//@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("ProximaNova", "https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/fonts/ProximaNova-Light", 300);
+@include font-face("ProximaNova", "https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/fonts/ProximaNova-Regular", 400);
+@include font-face("ProximaNova", "https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/fonts/ProximaNova-Bold", 700);
+@include font-face("ProximaNova", "https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/fonts/ProximaNova-Extrabld", 900);
+//@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600');
