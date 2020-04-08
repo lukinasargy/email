@@ -43,44 +43,75 @@ $callout-border-warning: 1px solid darken($warning-color, 20%) !default;
 $callout-border-alert: 1px solid darken($alert-color, 20%) !default;
 
 table.callout {
-  margin-bottom: $callout-margin-bottom;
-  Margin-bottom: $callout-margin-bottom;
+	margin-bottom: $callout-margin-bottom;
+	Margin-bottom: $callout-margin-bottom;
 }
 
 th.callout-inner {
-  width: 100%;
-  border: $callout-border;
-  padding: $callout-padding;
-  background: $callout-background;
+	width: 100%;
+	border: $callout-border;
+	padding: $callout-padding;
+	background: $callout-background;
 
-  &.primary {
-//    background: scale-color($primary-color, $lightness: $callout-background-fade);
+	h4 {
+		font-size: 18px;
+	}
+
+	span {
+		padding-right: 20px;
+		font-size: 14px;
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+	.columns {
+		padding: 0;
+	}
+
+	&.primary {
+		//    background: scale-color($primary-color, $lightness: $callout-background-fade);
 		background-color: $callout-background;
-    border: $callout-border-secondary;
-    color: $black;
-  }
+		border: $callout-border-secondary;
+		color: $black;
 
-  &.secondary {
-    background: scale-color($secondary-color, $lightness: $callout-background-fade);
-    border: $callout-border-secondary;
-    color: $black;
-  }
+	}
 
-  &.success {
-    background: scale-color($success-color, $lightness: $callout-background-fade);
-    border: $callout-border-success;
-    color: $white;
-  }
+	&.secondary {
+		//    background: scale-color($secondary-color, $lightness: $callout-background-fade);
+		background-color: $secondary-color;
+		border: $callout-border-secondary;
+		color: $black;	
+		h4 {
+			margin-bottom: 20px;
+		}
+		.row {
+			margin-bottom: 10px;
+		}
+	}
 
-  &.warning {
-    background: scale-color($warning-color, $lightness: $callout-background-fade);
-    border: $callout-border-warning;
-    color: $white;
-  }
+	&.success {
+		background: scale-color($success-color, $lightness: $callout-background-fade);
+		border: $callout-border-success;
+		color: $white;
+	}
 
-  &.alert {
-    background: scale-color($alert-color, $lightness: $callout-background-fade);
-    border: $callout-border-alert;
-    color: $white;
-  }
+	&.warning {
+		//    background: scale-color($warning-color, $lightness: $callout-background-fade);
+		border: $callout-border-warning;
+		background-color: $warning-color;
+		padding: 30px 40px 30px 30px;
+
+		p {
+			line-height: 19px;
+			margin-bottom: 0;
+		}
+	}
+
+	&.alert {
+		background: scale-color($alert-color, $lightness: $callout-background-fade);
+		border: $callout-border-alert;
+		color: $white;
+	}
 }

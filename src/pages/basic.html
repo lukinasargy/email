@@ -3,60 +3,125 @@ subject: My Basic Email Template Subject
 ---
 
 <wrapper class="header">
-  <container>
-    <row class="collapse">
-      <columns small="6">
-        <img src="https://raw.githubusercontent.com/lukinasargy/img/master/logo.png" alt="логотоип компании Spaceweb">
-      </columns>
-      <columns small="6">
-        <p class="text-right"><a href="mailto:client@sweb.ru">client@sweb.ru</a></p>
-      </columns>
-    </row>
-  </container>
+	<container>
+		<row class="collapse">
+			<columns small="6">
+				<img src="https://raw.githubusercontent.com/lukinasargy/img/master/logo.png" alt="логотоип компании Spaceweb" class="header-img">
+			</columns>
+			<columns small="6">
+				<p class="text-right"><a href="mailto:client@sweb.ru" style="font-size:14px">client@sweb.ru</a></p>
+			</columns>
+		</row>
+	</container>
 </wrapper>
 
 <container>
 
-  <spacer size="16"></spacer>
-  
-  <row>
-    <columns small="12">
-      
-      <h1>Добро пожаловать  в SpaceWeb! Ваш аккаунт успешно создан и полностью готов к работе.</h1>
-      <p class="lead">Вам предоставлен тестовый период: в течение %s дней вы можете совершенно бесплатно пользоваться хостингом и лично убедиться в его надежности!</p>
-      
-    </columns>
-  </row>
-  <callout class="primary">
-       	<h4>Информация о заказе</h4>
-        <p>Виртуальный хостинг на %s мес. по тарифному плану %s: %s</p>
-        <row>
-        	<columns>
-        		<span class="grey">Доменное имя</span>
-        		<span>%s </span>
-        	</columns>
-        	<columns >
-        		<span class="grey">Итого (сумма к оплате)</span>
-        		<span>%s</span>
-        	</columns>
-        </row>
-      </callout>
-  <wrapper class="secondary">
+	<spacer size="40"></spacer>
 
-    <spacer size="16"></spacer>
+	<row>
+		<columns small="12">
 
-    <row>
-      <columns large="6">
-        <h5>Connect With Us:</h5>
-        <button class="facebook expand" href="http://zurb.com">Facebook</button>
-        <button class="twitter expand" href="http://zurb.com">Twitter</button>
-        <button class="google expand" href="http://zurb.com">Google+</button>
-      </columns>
-      <columns large="6">
-        <h5>Contact Info:</h5>
-        <p>Phone: 408-341-0600</p>
-        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
-      </columns>
-    </row>
-  </wrapper>
+			<h1>Добро пожаловать в SpaceWeb! Ваш аккаунт успешно создан и полностью готов к работе.</h1>
+			<p class="lead">Вам предоставлен тестовый период: в течение %s дней вы можете совершенно бесплатно пользоваться хостингом и лично убедиться в его надежности!</p>
+
+		</columns>
+	</row>
+	<callout class="primary">
+		<h4>Информация о заказе</h4>
+		<p>Виртуальный хостинг на %s мес. по тарифному плану %s: %s</p>
+		<row>
+			<columns small="6">
+				<span class="grey">Доменное имя</span>
+				<span class="strong">%s </span>
+			</columns>
+			<columns small="6">
+				<span class="grey">Итого (сумма к оплате)</span>
+				<span class="strong">%s</span>
+			</columns>
+		</row>
+	</callout>
+	<callout class="secondary">
+		<h4>Данные для входа в панель управления, FTP- и SSH-доступа</h4>
+		<row>
+			<columns small="6">
+				<span class="grey">Адрес панели</span>
+				<span class="strong">https://cp.sweb.ru/</span>
+			</columns>
+			<columns small="6">
+				<span class="grey">Логин</span>
+				<span class="strong">%s</span>
+			</columns>
+		</row>
+		<row>
+			<columns small="6">
+				<span class="grey">Пароль</span>
+				<span class="strong">%s </span>
+			</columns>
+			<columns small="6">
+				<span class="grey">IP-адрес сервера</span>
+				<span class="strong">%s</span>
+			</columns>
+		</row>
+	</callout>
+	<row>
+		<columns small="12">
+
+			<ul class="list">
+				<li>
+					<h2>Как разместить/перенести сайт?</h2>
+					<p>Просто обратитесь к нам, и мы сделаем все за вас! При желании вы можете разместить сайт самостоятельно, воспользовавшись подробной инструкцией (<a href="https://help.sweb.ru/entry/7/">https://help.sweb.ru/entry/7/</a>).</p>
+				</li>
+				<li>
+					<h2>Как проверить работу сайта без домена?</h2>
+					<p>Мы уже создали для вас специальный технический домен! После размещения ваш сайт будет доступен по адресу
+						<a href="http://%s.temp.swtest.ru">http://%s.temp.swtest.ru</a>. Подробнее о техническом домене: <a href="https://help.sweb.ru/entry/65/">https://help.sweb.ru/entry/65/</a>.</p>
+				</li>
+				<li>
+					<h2>Как можно сэкономить?</h2>
+					<p>Используйте наши спецпредложения, и вы сможете бесплатно приобретать домены, SSL-сертификаты, получать скидки на хостинг и многое другое (<a href="https://sweb.ru/web/">https://sweb.ru/web/</a>).</p>
+				</li>
+				<li>
+					<h2>Нужна помощь?</h2>
+					<p>Мы работаем круглосуточно и всегда готовы помочь вам в решении вопросов, связанных с использованием нашего хостинга (<a href="https://sweb.ru/contactinfo/">https://sweb.ru/contactinfo/</a>). Обращайтесь к нам в любое время - мы всегда на связи.
+						<br>
+						<br>
+						Приятной работы на нашем хостинге!</p>
+				</li>
+			</ul>
+		</columns>
+	</row>
+	<callout class="warning">
+		<p>Если возникает вопрос <b>«С чего начать?»</b>, то предлагаем ознакомиться с инструкцией: <a href="https://help.sweb.ru/entry/840">https://help.sweb.ru/entry/840</a></p>
+	</callout>
+	<row>
+		<columns small="12">
+	<center>
+		<small>Пожалуйста, не отвечайте на это сообщение: оно было создано автоматически.</small>
+	</center>
+		</columns>
+	</row>
+	<spacer size="20"></spacer>
+
 </container>
+<wrapper class="footer">
+	<container>
+		<row >
+			<columns small="6">
+				<p>С уважением,<br>
+					информационный отдел
+					хостинг-провайдер SpaceWeb
+					<a href="mailto:client@sweb.ru">client@sweb.ru</a>
+				</p>
+			</columns>
+			<columns small="6">
+				<p style="color:#62686C">в Санкт-Петербурге <a href="tel:+78123341212" class="phone">+7 (812) 334-12-22</a><br>
+					в Москве <a href="tel:+74956631612" class="phone">+7 (495) 663-16-12</a><br>
+					бесплатно по России <a href="tel:+78001001615" class="phone">8-800 100-16-15</a>
+					<a href="https://spaceweb.ru">spaceweb.ru</a></p>
+			</columns>
+		</row>
+<!--			<spacer size="40"></spacer>-->
+
+	</container>
+</wrapper>

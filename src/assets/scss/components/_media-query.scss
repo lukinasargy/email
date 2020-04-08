@@ -28,8 +28,8 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: $global-gutter !important;
-    padding-right: $global-gutter !important;
+    padding-left: $global-gutter-small !important;
+    padding-right: $global-gutter-small !important;
 
     // Nested columns won't double the padding
     .column,
@@ -53,7 +53,8 @@
     td.small-#{$i},
     th.small-#{$i} {
       display: inline-block !important;
-      width: -zf-grid-calc-pct($i, $grid-column-count) !important;
+//      width: -zf-grid-calc-pct($i, $grid-column-count) !important;
+			width: 100% !important;
     }
   }
 
@@ -135,5 +136,13 @@
       min-width: 0;
     }
   }
+	.header {
+		.wrapper-inner {
+			padding: 15px;
+		}
+		.header-img {
+			width: 117px;
+		}
+	}
 }
 
