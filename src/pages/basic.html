@@ -6,10 +6,10 @@ subject: My Basic Email Template Subject
 	<container>
 		<row class="collapse">
 			<columns small="6">
-				<img src="https://raw.githubusercontent.com/lukinasargy/img/master/logo.png" alt="логотоип компании Spaceweb" class="header-img">
+			<a href="https://spaceweb.ru"><img src="https://raw.githubusercontent.com/lukinasargy/img/master/logo.png" alt="логотоип компании Spaceweb" class="header-img"></a>
 			</columns>
 			<columns small="6">
-				<p class="text-right"><a href="mailto:client@sweb.ru" style="font-size:14px">client@sweb.ru</a></p>
+				<p class="text-right"><a href="mailto:client@sweb.ru" class="header-email">client@sweb.ru</a></p>
 			</columns>
 		</row>
 	</container>
@@ -30,7 +30,7 @@ subject: My Basic Email Template Subject
 	<callout class="primary">
 		<h4>Информация о заказе</h4>
 		<p>Виртуальный хостинг на %s мес. по тарифному плану %s: %s</p>
-		<row>
+		<row class="collapse">
 			<columns small="6">
 				<span class="grey">Доменное имя</span>
 				<span class="strong">%s </span>
@@ -43,7 +43,7 @@ subject: My Basic Email Template Subject
 	</callout>
 	<callout class="secondary">
 		<h4>Данные для входа в панель управления, FTP- и SSH-доступа</h4>
-		<row>
+		<row class="collapse">
 			<columns small="6">
 				<span class="grey">Адрес панели</span>
 				<span class="strong">https://cp.sweb.ru/</span>
@@ -53,7 +53,7 @@ subject: My Basic Email Template Subject
 				<span class="strong">%s</span>
 			</columns>
 		</row>
-		<row>
+		<row class="collapse">
 			<columns small="6">
 				<span class="grey">Пароль</span>
 				<span class="strong">%s </span>
@@ -92,13 +92,18 @@ subject: My Basic Email Template Subject
 		</columns>
 	</row>
 	<callout class="warning">
-		<p>Если возникает вопрос <b>«С чего начать?»</b>, то предлагаем ознакомиться с инструкцией: <a href="https://help.sweb.ru/entry/840">https://help.sweb.ru/entry/840</a></p>
+		<row class="collapse">
+			<columns small="1"> <img src="https://raw.githubusercontent.com/lukinasargy/img/master/warning.png" alt="иконка warning">
+			</columns>
+			<columns small="11">
+				<p>Если возникает вопрос <b>«С чего начать?»</b>, то предлагаем ознакомиться с инструкцией: <a href="https://help.sweb.ru/entry/840">https://help.sweb.ru/entry/840</a></p>
+			</columns>
+		</row>
+
 	</callout>
 	<row>
 		<columns small="12">
-	<center>
-		<small>Пожалуйста, не отвечайте на это сообщение: оно было создано автоматически.</small>
-	</center>
+			<small>Пожалуйста, не отвечайте на это сообщение: оно было создано автоматически.</small>
 		</columns>
 	</row>
 	<spacer size="20"></spacer>
@@ -106,7 +111,7 @@ subject: My Basic Email Template Subject
 </container>
 <wrapper class="footer">
 	<container>
-		<row >
+		<row>
 			<columns small="6">
 				<p>С уважением,<br>
 					информационный отдел
@@ -118,10 +123,10 @@ subject: My Basic Email Template Subject
 				<p style="color:#62686C">в Санкт-Петербурге <a href="tel:+78123341212" class="phone">+7 (812) 334-12-22</a><br>
 					в Москве <a href="tel:+74956631612" class="phone">+7 (495) 663-16-12</a><br>
 					бесплатно по России <a href="tel:+78001001615" class="phone">8-800 100-16-15</a>
-					<a href="https://spaceweb.ru">spaceweb.ru</a></p>
+					<br> сайт <a href="https://spaceweb.ru">spaceweb.ru</a></p>
 			</columns>
 		</row>
-<!--			<spacer size="40"></spacer>-->
+		<!--			<spacer size="40"></spacer>-->
 
 	</container>
 </wrapper>

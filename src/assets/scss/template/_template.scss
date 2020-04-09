@@ -30,6 +30,10 @@ html,
 .header .container {
 	background: transparent;
 }
+.header-email {
+	font-size: 14px;
+	padding-right: 30px;
+}
 
 .list {
 	color: $black;
@@ -45,7 +49,9 @@ html,
 		margin-bottom: 23px;
 	}
 }
-
+small {
+	padding-left: 17px;
+}
 .footer {
 	& .container {
 		background: transparent;
@@ -59,7 +65,9 @@ html,
 	th.columns {
 		padding: 20px;
 	}
-
+	th.columns:nth-child(2) {
+		padding-left: 70px;
+	}
 	.phone {
 		color: #000000;
 	}

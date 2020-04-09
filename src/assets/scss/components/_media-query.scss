@@ -57,6 +57,48 @@
 			width: 100% !important;
     }
   }
+	.header .columns {
+		width: 50% !important;
+	}
+	.header-email {
+		padding-right: 0 !important;
+	}
+	th.callout-inner span:nth-child(2n) {
+		padding-right: 0 !important;
+	}
+	th.callout-inner {
+		padding: $callout-padding-small !important;
+	}
+	th.callout-inner.warning {
+		padding: 30px 16px !important;
+	}
+	.warning .small-1 {
+		width: 17.361% !important;
+	}
+	.warning .small-11 {
+		width: 82.638% !important;
+	}
+	small {
+		padding-left: 0 !important;
+	}
+	.footer .first p {
+		padding-right: 120px !important;
+	}
+	.footer a:first-child {
+		padding-left: 23px !important;
+	}
+	.footer a:nth-child(3) {
+			padding-left: 80px !important;
+	}
+	.footer a:nth-child(5) {
+			padding-left: 20px !important;
+	}
+	.footer a:nth-child(7) {
+			padding-left: 113px !important;
+	}
+	.footer th.columns {
+		padding-bottom: 0 !important;
+	}
 
   //If it's the last column in column count (12 by default),
   //give it block and 100% width to knock down the wimpy columns to their own row.
